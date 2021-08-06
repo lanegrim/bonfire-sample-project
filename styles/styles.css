@@ -1,3 +1,42 @@
+body {
+  background-color: #edf0f5;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+#nav-header {
+  padding: 2em;
+  background-image: url("../images/bg_mtns (1).jpg");
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav #logo-text {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 400;
+}
+nav #logo-accent {
+  color: #fcecca;
+  font-weight: 300;
+}
+nav #nav-tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 2.25em;
+}
+nav #nav-tabs .nav-tab {
+  font-size: 0.85em;
+}
+nav #nav-tabs #home-tab {
+  color: #fcecca;
+}
+nav #nav-tabs #away-tab {
+  color: #fff;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,1 +1,58 @@
+/////////////////////////////////////////////////
+// VARIABLES
+/////////////////////////////////////////////////
 
+// FONTS
+$title-font: 'STIX Two Text', serif
+$copy-font: 'Roboto', sans-serif
+
+// PALETTE 
+$background-color: #edf0f5
+$accent-color: #fcecca
+$dimgray: #696679
+$silver: #b1b5bc
+$white: #fff
+
+/////////////////////////////////////////////////
+// STYLES
+/////////////////////////////////////////////////
+
+body
+    background-color: $background-color
+    font-family: $copy-font
+    margin: 0
+    padding: 0
+
+#nav-header
+    padding: 2em
+    background-image: url('../images/bg_mtns (1).jpg')
+
+nav
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    #logo-text
+        margin-top: 0
+        color: $white
+        font-weight: 400
+
+    #logo-accent
+        color: $accent-color
+        font-weight: 300
+
+    #nav-tabs
+        display: flex
+        flex-direction: row
+        gap: 2.25em
+
+        .nav-tab
+            font-size: .85em
+
+        #home-tab
+            color: $accent-color
+
+        #away-tab
+            color: $white
+
+header

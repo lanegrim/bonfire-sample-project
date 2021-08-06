@@ -2,31 +2,45 @@
 <html lang="en">
 
 <head>
+    <!-- METADATA -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonfire Sample Page</title>
+
+    <!-- STYLES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=STIX+Two+Text:wght@600&display=swap"
+        rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- JAVASCRIPT -->
     <script src="app.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <h2 id='logo-text'>LOGODESIGN</h2>
-        <div class='nav-tab'>Home</div>
-        <div class='nav-tab'>Away</div>
-    </nav>
+    <div id='nav-header'>
+        <nav>
+            <h2 id='logo-text'>LOGO<span id='logo-accent'>DESIGN</span></h2>
+            <div id='nav-tabs'>
+                <div class='nav-tab' id='home-tab'>Home</div>
+                <div class='nav-tab' id='away-tab'>Away</div>
+            </div>
+        </nav>
 
-    <header>
-        <div id='hero'>
-            <h1 id='hero-title'>Why Hello There</h1>
-            <p id='hero-copy'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In earum accusantium ipsam
-                consequuntur. Quos laborum eaque vel, illo placeat, excepturi tempora temporibus magni enim pariatur
-                natus nihil provident porro totam.</p>
-        </div>
-    </header>
+        <header>
+            <div id='hero'>
+                <h1 id='hero-title'>Why Hello There</h1>
+                <p id='hero-copy'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In earum accusantium ipsam
+                    consequuntur. Quos laborum eaque vel, illo placeat, excepturi tempora temporibus magni enim pariatur
+                    natus nihil provident porro totam.</p>
+            </div>
+        </header>
+    </div>
 
     <div id='filter-options'>
         <div class='filter-option'>SHOW ALL</div>
@@ -39,48 +53,38 @@
             <h2 class='box-title'>BOX NUMBER 1</h2>
             <p class='box-subtitle'>USELESS SUBTEXT</p>
             <div class='box-link-area'>
-                <p class='box-link-text'>VIEW THE CASE STUDY</p>
+                VIEW THE CASE STUDY
             </div>
         </section>
 
         <section class='content-box' id='content-box-2'>
             <h2 class='box-title'>BOX NUMBER 2</h2>
             <p class='box-subtitle'>USELESS SUBTEXT</p>
-            <div class='box-link-area'>
-                <p class='box-link-text'>VIEW THE CASE STUDY</p>
-            </div>
+            <div class='box-link-area'>VIEW THE CASE STUDY</div>
         </section>
 
         <section class='content-box' id='content-box-3'>
             <h2 class='box-title'>BOX NUMBER 3</h2>
             <p class='box-subtitle'>USELESS SUBTEXT</p>
-            <div class='box-link-area'>
-                <p class='box-link-text'>VIEW THE CASE STUDY</p>
-            </div>
+            <div class='box-link-area'>VIEW THE CASE STUDY</div>
         </section>
 
         <section class='content-box' id='content-box-4'>
             <h2 class='box-title'>BOX NUMBER 4</h2>
             <p class='box-subtitle'>USELESS SUBTEXT</p>
-            <div class='box-link-area'>
-                <p class='box-link-text'>VIEW THE CASE STUDY</p>
-            </div>
+            <div class='box-link-area'>VIEW THE CASE STUDY</div>
         </section>
 
         <section class='content-box' id='content-box-5'>
             <h2 class='box-title'>BOX NUMBER 5</h2>
             <p class='box-subtitle'>USELESS SUBTEXT</p>
-            <div class='box-link-area'>
-                <p class='box-link-text'>VIEW THE CASE STUDY</p>
-            </div>
+            <div class='box-link-area'>VIEW THE CASE STUDY</div>
         </section>
 
         <section class='content-box' id='content-box-6'>
             <h2 class='box-title'>BOX NUMBER 6</h2>
             <p class='box-subtitle'>USELESS SUBTEXT</p>
-            <div class='box-link-area'>
-                <p class='box-link-text'>VIEW THE CASE STUDY</p>
-            </div>
+            <div class='box-link-area'>VIEW THE CASE STUDY</div>
         </section>
     </main>
 </body>
