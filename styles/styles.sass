@@ -9,7 +9,11 @@ $copy-font: 'Roboto', sans-serif
 // PALETTE 
 $background-color: #e5e8ec
 $accent-color: #fcecca
+$active-content-title: #cbab80
+$active-content-border: #d83a6a
+$card-background: #f6f7f9
 $dimgray: #696679
+$darkgray: #abafb8
 $silver: #b1b5bc
 $white: #fff
 $gainsboro: #e2e1e5
@@ -35,7 +39,7 @@ body
     flex-direction: column
     align-items: center
     width: 100%
-    padding: 2.5em 2.5em 7em 2.5em
+    padding: 2.75em 2.75em 7em 2.75em
     background-image: url('../images/bg_mtns (1).jpg')
     background-position-y: 22%
     background-position-x: center
@@ -52,7 +56,7 @@ nav
     #logo-text
         margin: 0
         color: $white
-        font-size: 1.25rem
+        font-size: 1.6rem
         font-weight: 400
 
     #logo-accent
@@ -66,7 +70,7 @@ nav
         gap: 2.25em
 
         .nav-tab
-            font-size: .75em
+            font-size: .85rem
             &:hover
                 cursor: pointer
 
@@ -74,7 +78,7 @@ nav
             color: $accent-color
 
         #away-tab
-            color: $white
+            color: $gainsboro
 
 header
     display: flex
@@ -87,14 +91,14 @@ header
 
     #hero-title
         font-family: $title-font
-        font-size: 2rem
+        font-size: 2.5rem
         margin-bottom: .25em
 
     #hero-copy
         margin: 0
         color: $gainsboro
         font-weight: 300
-        font-size: .9rem
+        font-size: 1rem
 
 #filter-options
     display: flex
@@ -121,3 +125,56 @@ header
         background-color: $accent-color
         color: $dimgray
         font-weight: 500
+
+main
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 2.75em 2.75em 2.75em
+
+#content-boxes
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-start
+    gap: 3em
+
+.content-box
+    display: flex
+    flex-direction: column
+    width: 30%
+    padding: 2.5em 1.25em 1.25em 1.25em
+    text-align: center
+    background-color: $card-background
+
+    .box-title
+        font-weight: 400
+        font-size: 1.5rem
+        color: $darkgray
+
+    .box-subtitle
+        margin-bottom: 5em
+        font-weight: 500
+        font-size: .8rem
+        color: $darkgray
+
+    .box-link-area
+        display: none
+
+    &:hover
+        cursor: pointer
+        border-top: 2px solid $active-content-border
+
+        .box-title
+            color: $active-content-title
+
+        .box-subtitle
+            color: $dimgray
+
+        .box-link-area
+            display: block
+            justify-self: flex-end
+            padding: 1em
+            background-color: $dimgray
+            color: $gainsboro
+            font-size: .8rem

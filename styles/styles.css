@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 2.5em 2.5em 7em 2.5em;
+  padding: 2.75em 2.75em 7em 2.75em;
   background-image: url("../images/bg_mtns (1).jpg");
   background-position-y: 22%;
   background-position-x: center;
@@ -35,7 +35,7 @@ nav {
 nav #logo-text {
   margin: 0;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 nav #logo-accent {
@@ -48,7 +48,7 @@ nav #nav-tabs {
   gap: 2.25em;
 }
 nav #nav-tabs .nav-tab {
-  font-size: 0.75em;
+  font-size: 0.85rem;
 }
 nav #nav-tabs .nav-tab:hover {
   cursor: pointer;
@@ -57,7 +57,7 @@ nav #nav-tabs #home-tab {
   color: #fcecca;
 }
 nav #nav-tabs #away-tab {
-  color: #fff;
+  color: #e2e1e5;
 }
 
 header {
@@ -71,14 +71,14 @@ header {
 }
 header #hero-title {
   font-family: "STIX Two Text", serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.25em;
 }
 header #hero-copy {
   margin: 0;
   color: #e2e1e5;
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 #filter-options {
@@ -107,6 +107,62 @@ header #hero-copy {
   background-color: #fcecca;
   color: #696679;
   font-weight: 500;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2.75em 2.75em 2.75em;
+}
+
+#content-boxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 3em;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 2.5em 1.25em 1.25em 1.25em;
+  text-align: center;
+  background-color: #f6f7f9;
+}
+.content-box .box-title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #abafb8;
+}
+.content-box .box-subtitle {
+  margin-bottom: 5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #abafb8;
+}
+.content-box .box-link-area {
+  display: none;
+}
+.content-box:hover {
+  cursor: pointer;
+  border-top: 2px solid #d83a6a;
+}
+.content-box:hover .box-title {
+  color: #cbab80;
+}
+.content-box:hover .box-subtitle {
+  color: #696679;
+}
+.content-box:hover .box-link-area {
+  display: block;
+  justify-self: flex-end;
+  padding: 1em;
+  background-color: #696679;
+  color: #e2e1e5;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
