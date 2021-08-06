@@ -161,8 +161,11 @@ main {
   justify-self: flex-end;
   padding: 1em;
   background-color: #696679;
+}
+.content-box:hover .box-link {
   color: #e2e1e5;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
