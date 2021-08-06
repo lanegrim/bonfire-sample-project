@@ -49,6 +49,7 @@ nav #nav-tabs {
 }
 nav #nav-tabs .nav-tab {
   font-size: 0.85rem;
+  text-decoration: none;
 }
 nav #nav-tabs .nav-tab:hover {
   cursor: pointer;
