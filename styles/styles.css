@@ -147,10 +147,10 @@ main {
   color: #abafb8;
 }
 .content-box .box-subtitle {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.25vw;
   margin: 0 0 5.5vw 0;
-  color: #abafb8;
+  color: #7d7b8b;
 }
 .content-box .box-link-area {
   display: none;
@@ -165,7 +165,7 @@ main {
   color: #cbab80;
 }
 .content-box:hover .box-subtitle {
-  color: #696679;
+  color: #3d4e65;
 }
 .content-box:hover .box-link-area {
   display: block;
