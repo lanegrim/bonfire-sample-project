@@ -33,13 +33,14 @@ body
     align-items: center
     margin: 0
     padding: 0
+    width: 100%
 
 #nav-header
     display: flex
     flex-direction: column
     align-items: center
     width: 100%
-    padding: 2.75em 2.75em 7em 2.75em
+    padding: 5vw 5vw 15vw 5vw
     background-image: url('../images/bg_mtns (1).jpg')
     background-position-y: 22%
     background-position-x: center
@@ -56,7 +57,7 @@ nav
     #logo-text
         margin: 0
         color: $white
-        font-size: 1.6rem
+        font-size: 1.5rem
         font-weight: 400
 
     #logo-accent
@@ -70,7 +71,7 @@ nav
         gap: 2.25em
 
         .nav-tab
-            font-size: .85rem
+            font-size: .80rem
             text-decoration: none
             &:hover
                 cursor: pointer
@@ -86,7 +87,7 @@ header
     flex-direction: column
     justify-content: center
     width: 40vw
-    margin-top: 2em
+    margin-top: 3em
     color: $white
     text-align: center
 
@@ -99,7 +100,7 @@ header
         margin: 0
         color: $gainsboro
         font-weight: 300
-        font-size: 1rem
+        font-size: .80rem
 
 #filter-options
     display: flex
@@ -132,31 +133,38 @@ main
     display: flex
     flex-direction: column
     align-items: center
-    padding: 0 2.75em 2.75em 2.75em
+    padding-bottom: 2.75em
 
 #content-boxes
-    display: flex
-    flex-flow: row wrap
-    justify-content: flex-start
-    gap: 3em
+    display: grid
+    grid-template-columns: 28vw 28vw 28vw
+    column-gap: 3vw
+    row-gap: 2vw
+    grid-template-rows: repeat(autofill, 25vw)
+    padding: 0 5vw
+    margin: 2.5vw
 
 .content-box
+    align-self: end
     display: flex
     flex-direction: column
-    width: 30%
-    padding: 2.5em 1.25em 1.25em 1.25em
+    width: 28vw
+    height: 24vw
+    margin-top: 1vw
+    padding: 6vw 2.5vw 2.5vw 2.5vw
     text-align: center
     background-color: $card-background
 
     .box-title
         font-weight: 400
-        font-size: 1.5rem
+        font-size: 2.5vw
+        margin: 0 0 1.25vw 0
         color: $darkgray
 
     .box-subtitle
-        margin-bottom: 5em
         font-weight: 500
-        font-size: .8rem
+        font-size: 1.25vw
+        margin: 0 0 5.5vw 0
         color: $darkgray
 
     .box-link-area
@@ -164,7 +172,9 @@ main
 
     &:hover
         cursor: pointer
-        border-top: 2px solid $active-content-border
+        box-shadow: inset 0 .3vw $active-content-border
+        margin-top: 0
+        margin-bottom: 1vw
 
         .box-title
             color: $active-content-title
@@ -175,10 +185,12 @@ main
         .box-link-area
             display: block
             justify-self: flex-end
+            width: 100%
+            height: 5vw
             padding: 1em
             background-color: $dimgray
 
         .box-link
             color: $gainsboro
-            font-size: .8rem
+            font-size: 1.25vw
             text-decoration: none
