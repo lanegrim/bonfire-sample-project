@@ -13,7 +13,7 @@ body {
   width: 100%;
 }
 
-#nav-header {
+#nav-header-block {
   display: flex;
   flex-direction: column;
   align-items: center;
