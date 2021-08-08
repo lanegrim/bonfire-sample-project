@@ -41,7 +41,7 @@ body
     flex-direction: column
     align-items: center
     width: 100%
-    padding: 5vw 5vw 15vw 5vw
+    padding: 5vw 5vw 10vw 5vw
     background-image: url('../images/bg_mtns (1).jpg')
     background-position-y: 22%
     background-position-x: center
@@ -58,8 +58,8 @@ nav
     #logo-text
         margin: 0
         color: $white
-        font-size: 1.5rem
-        font-weight: 400
+        font-size: 2vw
+        font-weight: 500
 
     #logo-accent
         color: $accent-color
@@ -68,11 +68,11 @@ nav
     #nav-tabs
         display: flex
         flex-direction: row
-        //flex gap isn't supported by IE11
-        gap: 2.25em
+        //gap isn't supported by IE11
+        gap: 3.5vw
 
         .nav-tab
-            font-size: .80rem
+            font-size: 1vw
             text-decoration: none
             &:hover
                 cursor: pointer
@@ -88,34 +88,35 @@ header
     flex-direction: column
     justify-content: center
     width: 40vw
-    margin-top: 3em
+    margin-top: 3.5vw
     color: $white
     text-align: center
 
     #hero-title
         font-family: $title-font
-        font-size: 2.5rem
-        margin-bottom: .25em
+        font-size: 3.5vw
+        margin-bottom: 1vw
 
     #hero-copy
         margin: 0
         color: $gainsboro
         font-weight: 300
-        font-size: .80rem
+        font-size: 1vw
+        line-height: 1.75
 
 #filter-options
     display: flex
     flex-flow: row wrap
     align-items: center
     position: relative
-    top: -1.7em
+    top: -2.25vw
     width: 40vw
 
     .filter-option
         width: calc(100%/3)
         height: fit-content
-        padding: 1.33em 2.25em
-        font-size: .75rem
+        padding: 1.33vw 2.25vw
+        font-size: 1vw
         font-weight: 300
         text-align: center
         background-color: $dimgray
@@ -124,7 +125,7 @@ header
             cursor: pointer
 
     .active
-        padding: 1.5em 2.25em
+        padding: 1.5vw 2.25vw
         background-color: $accent-color
         color: $dimgray
         font-weight: 500
@@ -134,7 +135,7 @@ main
     display: flex
     flex-direction: column
     align-items: center
-    padding-bottom: 2.75em
+    padding-bottom: 3vw
 
 #content-boxes
     display: grid
@@ -184,11 +185,11 @@ main
             color: $darkslategray
 
         .box-link-area
-            display: block
-            justify-self: flex-end
+            display: flex
+            justify-content: center
+            align-items: center
             width: 100%
             height: 5vw
-            padding: 1em
             background-color: $dimgray
 
         .box-link
