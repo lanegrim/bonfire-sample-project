@@ -22,7 +22,7 @@ $darkslategray: #3d4e65
 
 //WIDTHS
 $mobile-width: 600px
-$tablet-width: 1024px
+$tablet-width: 1050px
 $desktop-width: 1600px
 $wide-width: 1601px
 
@@ -34,11 +34,7 @@ $wide-width: 1601px
         @content
 
 @mixin for-tablet
-    @media (max-width: tablet-width)
-        @content
-
-@mixin for-desktop
-    @media (max-width: $desktop-width)
+    @media (max-width: $tablet-width)
         @content
 
 @mixin for-wide
@@ -102,6 +98,9 @@ nav
             &:hover
                 cursor: pointer
 
+            @include for-tablet
+                font-size: 1.5vw
+
         #home-tab
             color: $accent-color
 
@@ -117,6 +116,9 @@ header
     color: $white
     text-align: center
 
+    @include for-tablet
+        width: 50vw
+
     #hero-title
         font-family: $title-font
         font-size: 3.5vw
@@ -128,6 +130,9 @@ header
         font-size: 1vw
         line-height: 1.75
 
+        @include for-tablet
+            font-size: 1.5vw
+
 #filter-options
     display: flex
     flex-flow: row wrap
@@ -135,6 +140,9 @@ header
     position: relative
     top: -2.25vw
     width: 40vw
+
+    @include for-tablet
+        width: 50vw
 
     @include for-wide
         top: -1.1vw
@@ -151,6 +159,9 @@ header
         color: $gainsboro
         &:hover
             cursor: pointer
+
+        @include for-tablet
+            font-size: 1.5vw
 
         @include for-wide
             padding: 0.5vw
