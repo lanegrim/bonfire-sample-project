@@ -91,6 +91,12 @@ header #hero-copy {
   top: -2.25vw;
   width: 40vw;
 }
+@media (min-width: 1601px) {
+  #filter-options {
+    top: -1.1vw;
+    width: 25vw;
+  }
+}
 #filter-options .filter-option {
   width: calc(100%/3);
   height: fit-content;
@@ -104,15 +110,26 @@ header #hero-copy {
 #filter-options .filter-option:hover {
   cursor: pointer;
 }
+@media (min-width: 1601px) {
+  #filter-options .filter-option {
+    padding: 0.5vw;
+    font-size: 0.7vw;
+  }
+}
 #filter-options .active {
   padding: 1.5vw 2.25vw;
   background-color: #fcecca;
   color: #696679;
   font-weight: 500;
 }
+@media (min-width: 1601px) {
+  #filter-options .active {
+    padding: 0.7vw;
+  }
+}
 
 main {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,12 +138,18 @@ main {
 
 #content-boxes {
   display: grid;
-  grid-template-columns: 28vw 28vw 28vw;
+  grid-template-columns: repeat(3, 28vw);
   column-gap: 3vw;
   row-gap: 2vw;
   grid-template-rows: repeat(autofill, 25vw);
   padding: 0 5vw;
   margin: 2.5vw;
+}
+@media (min-width: 1601px) {
+  #content-boxes {
+    grid-template-columns: repeat(4, 15vw);
+    padding: 0;
+  }
 }
 
 .content-box {
@@ -139,6 +162,14 @@ main {
   padding: 6vw 2.5vw 2.5vw 2.5vw;
   text-align: center;
   background-color: #f6f7f9;
+  transition: margin-top 0.5s, margin-bottom 0.5s;
+}
+@media (min-width: 1601px) {
+  .content-box {
+    width: 15vw;
+    height: 12.5vw;
+    padding: 2.5vw 1.25vw 1.25vw 1.25vw;
+  }
 }
 .content-box .box-title {
   font-weight: 400;
@@ -146,11 +177,23 @@ main {
   margin: 0 0 1.25vw 0;
   color: #abafb8;
 }
+@media (min-width: 1601px) {
+  .content-box .box-title {
+    font-size: 1.25vw;
+    margin: 0 0 0.625vw 0;
+  }
+}
 .content-box .box-subtitle {
   font-weight: 500;
   font-size: 1.25vw;
   margin: 0 0 5.5vw 0;
   color: #7d7b8b;
+}
+@media (min-width: 1601px) {
+  .content-box .box-subtitle {
+    font-size: 0.75vw;
+    margin: 0 0 3.625vw 0;
+  }
 }
 .content-box .box-link-area {
   display: none;
@@ -158,8 +201,13 @@ main {
 .content-box:hover {
   cursor: pointer;
   box-shadow: inset 0 0.3vw #d83a6a;
-  margin-top: 0;
-  margin-bottom: 1vw;
+  margin: 0 0 1vw 0;
+}
+@media (min-width: 1601px) {
+  .content-box:hover {
+    margin-bottom: 0.625vw;
+    box-shadow: inset 0 0.15vw #d83a6a;
+  }
 }
 .content-box:hover .box-title {
   color: #cbab80;
@@ -175,10 +223,20 @@ main {
   height: 5vw;
   background-color: #696679;
 }
+@media (min-width: 1601px) {
+  .content-box:hover .box-link-area {
+    height: 2.5vw;
+  }
+}
 .content-box:hover .box-link {
   color: #e2e1e5;
   font-size: 1.25vw;
   text-decoration: none;
+}
+@media (min-width: 1601px) {
+  .content-box:hover .box-link {
+    font-size: 0.75vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

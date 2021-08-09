@@ -30,7 +30,7 @@ $(() => {
             $('#content-boxes').append($contentBox)
         }
     }
-    populateContentBoxes(6);
+    populateContentBoxes(11);
 
     // FILTER CONTENT
     let filterContentBoxes = (filterCriteria) => {

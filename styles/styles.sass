@@ -20,6 +20,31 @@ $gainsboro: #e2e1e5
 $shadow: #cfd3d8
 $darkslategray: #3d4e65
 
+//WIDTHS
+$mobile-width: 600px
+$tablet-width: 1024px
+$desktop-width: 1600px
+$wide-width: 1601px
+
+/////////////////////////////////////////////////
+// MEDIA QUERIES
+/////////////////////////////////////////////////
+@mixin for-mobile
+    @media (max-width: $mobile-width)
+        @content
+
+@mixin for-tablet
+    @media (max-width: tablet-width)
+        @content
+
+@mixin for-desktop
+    @media (max-width: $desktop-width)
+        @content
+
+@mixin for-wide
+    @media (min-width: $wide-width)
+        @content
+
 /////////////////////////////////////////////////
 // STYLES
 /////////////////////////////////////////////////
@@ -111,6 +136,10 @@ header
     top: -2.25vw
     width: 40vw
 
+    @include for-wide
+        top: -1.1vw
+        width: 25vw
+
     .filter-option
         width: calc(100%/3)
         height: fit-content
@@ -123,14 +152,21 @@ header
         &:hover
             cursor: pointer
 
+        @include for-wide
+            padding: 0.5vw
+            font-size: .7vw
+
     .active
         padding: 1.5vw 2.25vw
         background-color: $accent-color
         color: $dimgray
         font-weight: 500
 
+        @include for-wide
+            padding: .7vw
+
 main
-    width: 100%
+    width: 80%
     display: flex
     flex-direction: column
     align-items: center
@@ -138,12 +174,16 @@ main
 
 #content-boxes
     display: grid
-    grid-template-columns: 28vw 28vw 28vw
+    grid-template-columns: repeat(3, 28vw)
     column-gap: 3vw
     row-gap: 2vw
     grid-template-rows: repeat(autofill, 25vw)
     padding: 0 5vw
     margin: 2.5vw
+
+    @include for-wide
+        grid-template-columns: repeat(4, 15vw)
+        padding: 0
 
 .content-box
     align-self: end
@@ -155,6 +195,12 @@ main
     padding: 6vw 2.5vw 2.5vw 2.5vw
     text-align: center
     background-color: $card-background
+    transition: margin-top .5s, margin-bottom .5s
+
+    @include for-wide
+        width: 15vw
+        height: 12.5vw
+        padding: 2.5vw 1.25vw 1.25vw 1.25vw
 
     .box-title
         font-weight: 400
@@ -162,11 +208,19 @@ main
         margin: 0 0 1.25vw 0
         color: $darkgray
 
+        @include for-wide
+            font-size: 1.25vw
+            margin: 0 0 0.625vw 0
+
     .box-subtitle
         font-weight: 500
         font-size: 1.25vw
         margin: 0 0 5.5vw 0
         color: $gray
+
+        @include for-wide
+            font-size: 0.75vw
+            margin: 0 0 3.625vw 0
 
     .box-link-area
         display: none
@@ -174,8 +228,11 @@ main
     &:hover
         cursor: pointer
         box-shadow: inset 0 .3vw $active-content-border
-        margin-top: 0
-        margin-bottom: 1vw
+        margin: 0 0 1vw 0
+
+        @include for-wide
+            margin-bottom: .625vw
+            box-shadow: inset 0 .15vw $active-content-border
 
         .box-title
             color: $active-content-title
@@ -191,7 +248,13 @@ main
             height: 5vw
             background-color: $dimgray
 
+            @include for-wide
+                height: 2.5vw
+
         .box-link
             color: $gainsboro
             font-size: 1.25vw
             text-decoration: none
+
+            @include for-wide
+                font-size: .75vw
