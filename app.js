@@ -6,6 +6,11 @@ $(() => {
                 'class': 'content-box',
                 'id': `content-box-${i}`
             })
+
+            let $contentBoxTextArea = $('<div>', {
+                'class': 'box-text-area'
+            })
+
             let $contentBoxTitle = $(`<h2></h2>`, {
                 'class': 'box-title',
                 'html': `BOX NUMBER ${i}`
@@ -24,8 +29,9 @@ $(() => {
             })
 
             $contentBoxLinkArea.append($contentBoxLink)
-            $contentBox.append($contentBoxTitle)
-            $contentBox.append($contentBoxSubtitle)
+            $contentBoxTextArea.append($contentBoxTitle)
+            $contentBoxTextArea.append($contentBoxSubtitle)
+            $contentBox.append($contentBoxTextArea)
             $contentBox.append($contentBoxLinkArea)
             $('#content-boxes').append($contentBox)
         }
