@@ -35,6 +35,7 @@ nav {
 }
 nav #logo-text {
   margin: 0;
+  font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 2vw;
   font-weight: 600;
@@ -65,7 +66,7 @@ nav #nav-tabs .nav-tab {
 nav #nav-tabs .nav-tab:hover {
   cursor: pointer;
 }
-@media (min-width: 600px), (max-width: 1050px) {
+@media (min-width: 600px) and (max-width: 900px) {
   nav #nav-tabs .nav-tab {
     font-size: 1.5vw;
   }
@@ -91,7 +92,7 @@ header {
   color: #fff;
   text-align: center;
 }
-@media (min-width: 600px), (max-width: 1050px) {
+@media (min-width: 600px) and (max-width: 900px) {
   header {
     width: 50vw;
   }
@@ -114,10 +115,10 @@ header #hero-title {
 header #hero-copy {
   margin: 0;
   color: #e2e1e5;
-  font-size: 1vw;
+  font-size: 1.25vw;
   line-height: 1.75;
 }
-@media (min-width: 600px), (max-width: 1050px) {
+@media (min-width: 600px) and (max-width: 900px) {
   header #hero-copy {
     font-size: 2vw;
   }
@@ -142,7 +143,7 @@ header #hero-copy {
     width: 25vw;
   }
 }
-@media (min-width: 600px), (max-width: 1050px) {
+@media (min-width: 600px) and (max-width: 900px) {
   #filter-options {
     width: 50vw;
   }
@@ -172,7 +173,7 @@ header #hero-copy {
     font-size: 0.7vw;
   }
 }
-@media (min-width: 600px), (max-width: 1050px) {
+@media (min-width: 600px) and (max-width: 900px) {
   #filter-options .filter-option {
     font-size: 1.5vw;
   }
@@ -235,10 +236,10 @@ main {
   width: 28vw;
   height: 24vw;
   margin-top: 1vw;
-  padding: 6vw 2.5vw 2.5vw 2.5vw;
+  padding: 8vw 2.5vw 0.5vw 2.5vw;
   text-align: center;
   background-color: #f6f7f9;
-  transition: margin-top 0.5s, margin-bottom 0.5s;
+  transition: margin-top 0.5s, margin-bottom 0.5s, padding-top 0.5s;
 }
 @media (min-width: 1601px) {
   .content-box {
@@ -272,9 +273,9 @@ main {
   }
 }
 .content-box .box-subtitle {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.25vw;
-  margin: 0 0 5.5vw 0;
+  margin: 0 0 7.5vw 0;
   color: #7d7b8b;
 }
 @media (min-width: 1601px) {
@@ -296,6 +297,7 @@ main {
   cursor: pointer;
   box-shadow: inset 0 0.3vw #d83a6a;
   margin: 0 0 1vw 0;
+  padding: 4vw 2.5vw 2.5vw 2.5vw;
 }
 @media (min-width: 1601px) {
   .content-box:hover {
