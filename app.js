@@ -42,15 +42,15 @@ $(() => {
     let filterContentBoxes = (filterCriteria) => {
         switch (filterCriteria) {
             case 'show-all':
-                $('.content-box').css('display', 'flex')
+                $('.content-box').show()
                 break;
             case 'show-odd':
-                $('.content-box:even').css('display', 'flex')
-                $('.content-box:odd').css('display', 'none')
+                $('.content-box:even').show()
+                $('.content-box:odd').hide()
                 break;
             case 'show-even':
-                $('.content-box:odd').css('display', 'flex')
-                $('.content-box:even').css('display', 'none')
+                $('.content-box:odd').show()
+                $('.content-box:even').hide()
                 break;
         }
     }
