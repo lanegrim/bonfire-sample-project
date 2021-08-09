@@ -39,6 +39,16 @@ nav #logo-text {
   font-size: 2vw;
   font-weight: 600;
 }
+@media (min-width: 1601px) {
+  nav #logo-text {
+    font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  nav #logo-text {
+    font-size: 3vw;
+  }
+}
 nav #logo-accent {
   color: #fcecca;
   font-weight: 300;
@@ -55,9 +65,14 @@ nav #nav-tabs .nav-tab {
 nav #nav-tabs .nav-tab:hover {
   cursor: pointer;
 }
-@media (max-width: 1050px) {
+@media (min-width: 600px), (max-width: 1050px) {
   nav #nav-tabs .nav-tab {
     font-size: 1.5vw;
+  }
+}
+@media (max-width: 600px) {
+  nav #nav-tabs .nav-tab {
+    font-size: 2.5vw;
   }
 }
 nav #nav-tabs #home-tab {
@@ -76,9 +91,14 @@ header {
   color: #fff;
   text-align: center;
 }
-@media (max-width: 1050px) {
+@media (min-width: 600px), (max-width: 1050px) {
   header {
     width: 50vw;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    width: 75vw;
   }
 }
 header #hero-title {
@@ -86,15 +106,25 @@ header #hero-title {
   font-size: 3.5vw;
   margin-bottom: 1vw;
 }
+@media (max-width: 600px) {
+  header #hero-title {
+    font-size: 5vw;
+  }
+}
 header #hero-copy {
   margin: 0;
   color: #e2e1e5;
   font-size: 1vw;
   line-height: 1.75;
 }
-@media (max-width: 1050px) {
+@media (min-width: 600px), (max-width: 1050px) {
   header #hero-copy {
-    font-size: 1.5vw;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  header #hero-copy {
+    font-size: 2.5vw;
   }
 }
 
@@ -106,15 +136,21 @@ header #hero-copy {
   top: -2.25vw;
   width: 40vw;
 }
-@media (max-width: 1050px) {
-  #filter-options {
-    width: 50vw;
-  }
-}
 @media (min-width: 1601px) {
   #filter-options {
     top: -1.1vw;
     width: 25vw;
+  }
+}
+@media (min-width: 600px), (max-width: 1050px) {
+  #filter-options {
+    width: 50vw;
+  }
+}
+@media (max-width: 600px) {
+  #filter-options {
+    top: -2.75vw;
+    width: 75vw;
   }
 }
 #filter-options .filter-option {
@@ -130,15 +166,20 @@ header #hero-copy {
 #filter-options .filter-option:hover {
   cursor: pointer;
 }
-@media (max-width: 1050px) {
-  #filter-options .filter-option {
-    font-size: 1.5vw;
-  }
-}
 @media (min-width: 1601px) {
   #filter-options .filter-option {
     padding: 0.5vw;
     font-size: 0.7vw;
+  }
+}
+@media (min-width: 600px), (max-width: 1050px) {
+  #filter-options .filter-option {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 600px) {
+  #filter-options .filter-option {
+    font-size: 2vw;
   }
 }
 #filter-options .active {
@@ -150,6 +191,11 @@ header #hero-copy {
 @media (min-width: 1601px) {
   #filter-options .active {
     padding: 0.7vw;
+  }
+}
+@media (max-width: 600px) {
+  #filter-options .active {
+    padding: 1.75vw;
   }
 }
 
@@ -167,13 +213,18 @@ main {
   column-gap: 3vw;
   row-gap: 2vw;
   grid-template-rows: repeat(autofill, 25vw);
-  padding: 0 5vw;
-  margin: 2.5vw;
+  padding: 2.5vw 5vw;
 }
 @media (min-width: 1601px) {
   #content-boxes {
     grid-template-columns: repeat(4, 15vw);
     padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  #content-boxes {
+    grid-template-columns: repeat(2, 42vw);
+    padding: 2.5vw 0;
   }
 }
 
@@ -196,6 +247,13 @@ main {
     padding: 2.5vw 1.25vw 1.25vw 1.25vw;
   }
 }
+@media (max-width: 600px) {
+  .content-box {
+    width: 42vw;
+    height: 32vw;
+    padding: 7.5vw 2.5vw 2.5vw 2.5vw;
+  }
+}
 .content-box .box-title {
   font-weight: 400;
   font-size: 2.5vw;
@@ -206,6 +264,11 @@ main {
   .content-box .box-title {
     font-size: 1.25vw;
     margin: 0 0 0.625vw 0;
+  }
+}
+@media (max-width: 600px) {
+  .content-box .box-title {
+    font-size: 3.5vw;
   }
 }
 .content-box .box-subtitle {
@@ -220,6 +283,12 @@ main {
     margin: 0 0 3.625vw 0;
   }
 }
+@media (max-width: 600px) {
+  .content-box .box-subtitle {
+    font-size: 2vw;
+    margin: 0 0 7.5vw 0;
+  }
+}
 .content-box .box-link-area {
   display: none;
 }
@@ -230,8 +299,12 @@ main {
 }
 @media (min-width: 1601px) {
   .content-box:hover {
-    margin-bottom: 0.625vw;
     box-shadow: inset 0 0.15vw #d83a6a;
+  }
+}
+@media (max-width: 600px) {
+  .content-box:hover {
+    box-shadow: inset 0 0.5vw #d83a6a;
   }
 }
 .content-box:hover .box-title {
@@ -253,6 +326,11 @@ main {
     height: 2.5vw;
   }
 }
+@media (max-width: 600px) {
+  .content-box:hover .box-link-area {
+    height: 7.5vw;
+  }
+}
 .content-box:hover .box-link {
   color: #e2e1e5;
   font-size: 1.25vw;
@@ -261,6 +339,11 @@ main {
 @media (min-width: 1601px) {
   .content-box:hover .box-link {
     font-size: 0.75vw;
+  }
+}
+@media (max-width: 600px) {
+  .content-box:hover .box-link {
+    font-size: 2vw;
   }
 }
 
