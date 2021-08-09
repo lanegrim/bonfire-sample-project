@@ -163,6 +163,7 @@ header #hero-copy {
   text-align: center;
   background-color: #696679;
   color: #e2e1e5;
+  box-shadow: 0 0 7.5px 2.5px #66696679;
 }
 #filter-options .filter-option:hover {
   cursor: pointer;
@@ -239,6 +240,7 @@ main {
   padding: 30% 10% 2% 10%;
   text-align: center;
   background-color: #fff;
+  box-shadow: 0 1px 2.5px 0 #69667934;
   transition-property: margin-top, margin-bottom, padding-top, box-shadow;
   transition-duration: 0.5s;
 }
@@ -295,7 +297,7 @@ main {
 }
 .content-box:hover {
   cursor: pointer;
-  box-shadow: inset 0 0.25vw #d83a6a;
+  box-shadow: inset 0 0.25vw #d83a6a, 0 20px 20px 0 #69667934;
   margin: 0 0 4% 0;
   padding: 15% 9% 9% 9%;
 }
