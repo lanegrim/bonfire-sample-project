@@ -238,7 +238,8 @@ main
     padding: 7vw 2.5vw .5vw 2.5vw
     text-align: center
     background-color: $card-background
-    transition: margin-top .5s, margin-bottom .5s, padding-top .5s
+    transition-property: margin-top, margin-bottom, padding-top, box-shadow,
+    transition-duration: .5s
 
     @include for-wide
         width: 15vw
@@ -255,6 +256,8 @@ main
         font-size: 2.5vw
         margin: 0 0 1.25vw 0
         color: $darkgray
+        transition-property: color
+        transition-duration: .5s
 
         @include for-wide
             font-size: 1.25vw
