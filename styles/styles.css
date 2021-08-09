@@ -163,7 +163,7 @@ header #hero-copy {
   text-align: center;
   background-color: #696679;
   color: #e2e1e5;
-  box-shadow: 0 0 7.5px 2.5px #66696679;
+  box-shadow: 0 2.5px 10px 1px #66696679;
 }
 #filter-options .filter-option:hover {
   cursor: pointer;
